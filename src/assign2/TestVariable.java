@@ -35,7 +35,7 @@ public class TestVariable {
 //    //precision loss is upto developer           
 //       
        
-     int a,b,c,d,e,f;
+     int a,b,c,d,e,f,g;
      a=b=c=d=e=g=f=1;
      
      a=a+1;// binary addition
@@ -43,5 +43,9 @@ public class TestVariable {
      a ++; // post increment operator --> after evaluate ++a pre increment -->Before evaluate
      a --; // decrement operator
     
+     
+     f = a-- + --c + --a + b++ + c++ + d++;
+     //  2   +   0 +  0  + 2  + 2  + 2
+     System.out.println(f);
     
     }        
